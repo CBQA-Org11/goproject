@@ -8,7 +8,7 @@ Services contains a group of service that exists in a repository. For example on
 
 The services itself can be related to each others or not at all. For example `order service` might need `user service` help to check wether the user is active or not. Or maybe `payment service` need `order service` to check the status of the order itself.
 
-### Service
+### Service Description
 
 The dependencies in a service managed by `interfaces` exists within the service itself. For example the `order service` has `IsUserActive` method for `UserService` interface:
 
