@@ -39,7 +39,7 @@ This design leave so many questions for us. First, why `service A` and `service 
 
 In this case, a design review needs to be done, and the the cyclic calls need to get removed immediately.
 
-## Monolith Go Application
+## Monolith - Go Application
 
 Things get interesting when developing a monolith Go application, because Go prevent us from doing cyclic import.
 
