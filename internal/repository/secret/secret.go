@@ -101,7 +101,7 @@ WHERE id = :id
 AND secret_key = :secret_key
 `
 )
-// Copied Line numbers 94 - 103 for testing smart scan features
+// Copied Line numbers 94 - 103 for testing smart scan features and event based triggers
 const (
 	updateSecretQuery = `
 UPDATE user_secrets
