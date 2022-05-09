@@ -101,6 +101,17 @@ WHERE id = :id
 AND secret_key = :secret_key
 `
 )
+// Copied Line numbers 94 - 103 for testing smart scan
+const (
+	updateSecretQuery = `
+UPDATE user_secrets
+SET secret_value = :secret_value,
+updated_at = :updated_at,
+updated_by = :updated_by
+WHERE id = :id
+AND secret_key = :secret_key
+`
+)
 
 // UpdateSecret for updating current secret
 func (r Repository) UpdateSecret(ctx context.Context, secret secretentity.Secret) error {
